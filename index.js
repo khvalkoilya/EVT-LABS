@@ -6,6 +6,8 @@ const app = express();
 const __dirname = path.resolve()
 const PORT = process.env.PORT || '8000';
 
+app.use(express.static(path.join(__dirname, '/static')));
+
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'static', 'pages', 'index.html'))
 })
