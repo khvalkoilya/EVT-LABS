@@ -62,6 +62,7 @@ a {
 
 .intro__name {
   margin: 0;
+  padding-left: 19.2rem;
   padding-top: 5rem;
   letter-spacing: -0.24rem;
   font-size: 9.6rem;
@@ -80,14 +81,25 @@ a {
 
 .intro__button {
   margin-top: 5rem;
+}
+
+.button {
   width: 18.4rem;
   height: 5rem;
   background-color: #B2FAEC;
   display: flex;
   align-items: center;
+  outline: none;
+  border: none;
 }
 
-.intro__button > a {
+.button:hover {
+  cursor: pointer;
+  background-color: #D9FDF6;
+  transform: scale(1.02);
+}
+
+.button > a {
   margin: 0 auto;
   letter-spacing: 0.13rem;
   color: #333333;
@@ -122,6 +134,11 @@ a {
 
 .sertificates__image {
   width: 48rem;
+}
+
+img {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 section {
@@ -200,4 +217,66 @@ section {
   line-height: 1.82rem;
 }
 
+.form {
+  margin-top: 81rem;
+  width: 80%;
+}
 
+.form__info {
+  margin-left: 4.7rem;
+}
+
+.form__info__title {
+  font-size: 1.9rem;
+  line-height: 2.43rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.6rem;
+}
+
+.form__input {
+  border: none;
+  outline: none;
+  width: 30.4rem;
+  height: 4rem;
+  margin-right: 3.8rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid #333333;
+  color: #333333;
+  font-size: 1.9rem;
+}
+
+.form__input::placeholder {
+  color: #BDBDBD;
+  font-size: 1.9rem;
+}
+
+.form__button {
+  margin-top: 0.8rem;
+  width: 17.3rem;
+  justify-content: center;
+  letter-spacing: 0.13rem;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.instagram__link {
+  margin-left: 4.8rem;
+  color: #333333;
+}
+
+.instagram__link:hover {
+  cursor: pointer;
+  color: #838383;
+  font-size: 3.6rem;
+}
+
+.instagram__collection {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 38.4rem);
+}
+
+.instagram__photo {
+  width: 100%;
+}
