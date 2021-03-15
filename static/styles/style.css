@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  height: 4.9rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7.7rem;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading-container {
+  padding: 0 calc(19.2rem - 17px) 0 19.2rem; /* this is for deleting scroll bar */
+  box-sizing: border-box;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: -0.25rem;
+}
+
+.navbar {
+  width: 65.5vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar > a {
+  color: #333333;
+  font-size: 2rem;
+}
+
+.navbar > a:hover {
+  border-bottom: 1px solid #333333;
+}
+
+.intro {
+  background-color: #f6b0c0;
+  background-image: url("../images/40388186_574445856308408_5760323745227824182_n\ 1.png");
+  background-size: cover;
+  height: 50vw;
+}
+
+.intro__name {
+  margin: 0;
+  padding-top: 5rem;
+  letter-spacing: -0.24rem;
+  font-size: 9.6rem;
+  width: 50vw;
+  line-height: 11rem;
+  color: #ffffff;
+}
+
+.intro__info {
+  margin: 0;
+  padding-top: 4.15rem;
+  color: #ffffff;
+  font-size: 3.2rem;
+  letter-spacing: 0.13rem;
+}
+
+.intro__button {
+  margin-top: 5rem;
+  width: 18.4rem;
+  height: 5rem;
+  background-color: #B2FAEC;
+  display: flex;
+  align-items: center;
+}
+
+.intro__button > a {
+  margin: 0 auto;
+  letter-spacing: 0.13rem;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.sertificates__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondary-tittle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  letter-spacing: -0.03rem;
+}
+
+.sertificates__description {
+  font-size: 2rem;
+  width: 53rem;
+  letter-spacing: -0.05rem;
+  line-height: 2.4rem;
+  margin: 0 0 0 4.8rem;
+}
+
+.sertificates__description > p {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.sertificates__image {
+  width: 48rem;
+}
+
+section {
+  margin-bottom: 9.6rem;
+}
+
+.advantages__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 0 0 4.8rem;
+  gap: 0 4.5rem;
+  grid-auto-rows: 25.5rem;
+  margin-top: 6.6rem;
+}
+
+.advantages__element {
+  width: 29.1rem;
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: -0.05rem;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 1.7rem;
+}
+
+.advantages__description {
+  font-size: 1.9rem;
+  line-height: 2.43rem;
+  letter-spacing: 0.02rem;
+}
+
+.zones__name {
+  margin-top: -2.5rem;
+}
+
+.zones__chair {
+  float: left;
+  margin: -0.4rem 0 0 4.8rem;
+  width: 38.4rem;
+}
+
+.zones__mirrors {
+  margin-top: 4.8rem;
+  float: left;
+  width: 38.5rem;
+}
+
+.zones__woman {
+  margin-top: 4.2rem;
+  width: 67.3rem;
+  float: right;
+}
+
+.zones__description {
+  display: flex;
+  width: 52rem;
+  margin-top: 7.8rem;
+  margin-left: auto;
+  margin-right: 5.5rem;
+}
+
+.zones__number {
+  margin: 0;
+  font-weight: 700;
+  font-size: 9.4rem;
+  letter-spacing: -0.15rem;
+}
+
+.zones__text {
+  letter-spacing: -0.001rem;
+  margin-left: 0.5rem;
+  font-size: 1.9rem;
+  line-height: 1.82rem;
+}
+
+

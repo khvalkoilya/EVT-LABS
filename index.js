@@ -7,7 +7,11 @@ const __dirname = path.resolve()
 const PORT = process.env.PORT || '8000';
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'static', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'static', 'pages', 'index.html'))
+})
+
+app.get('/second', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'static', 'pages', 'second.html'))
 })
 
 app.get('/close', (req, res) => {
