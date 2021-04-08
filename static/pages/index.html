@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="../images/image.ico" type="image/png">
   <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
   <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=613223c6-1f9e-446e-ad9e-5e1b5e8e37b2&lang=ru_RU" type="text/javascript"></script>
   <title>Ki_Studio</title>
 </head>
 <body>
@@ -123,17 +124,23 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="map">
       <div class="heading-container">
+        <div id="map"></div>
+      </div>
+    </section>
+    <section class="form">
+      <form class="heading-container">
         <h2 class="secondary-tittle">Обратная связь</h2>
+        <div class="button show-form__button"><span>Открыть форму</span></div>
         <div class="form__info">
           <p class="form__info__title">Наш менеджер свяжется с Вами в течении 30 минут</p>
-          <input class="form__input" placeholder="Имя" name="Имя" type="text">
-          <input class="form__input" placeholder="Телефон" name="Телефон" type="text">
-          <input class="form__input" placeholder="Удобные для Вас датa и время" name="Время" type="text">
+          <input class="form__input" placeholder="Имя" name="Имя" type="text" required>
+          <input class="form__input" placeholder="Телефон" name="Телефон" type="text" required>
+          <input class="form__input" placeholder="Удобные для Вас датa и время" name="Время" type="text" required>
           <button type="submit" class="form__button button">ОТПРАВИТЬ</button>
         </div>
-      </div>
+      </form>
     </section>
     <section class="instagram">
       <div class="heading-container">
@@ -153,5 +160,6 @@
   <!-- <footer>
     IN THIS PROJECT FOOTER IS EMPTY
   </footer> --> 
+  <script src="../script/index.js"></script>
 </body>
 </html>
