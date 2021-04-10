@@ -236,7 +236,7 @@ section {
 
 .form__info-opened {
   visibility: visible;
-  animation: open-form 1s ease-out;
+  animation: open-form 0.5s ease-out;
 }
 
 @keyframes open-form {
@@ -369,4 +369,8 @@ section {
   margin-top: 81rem;
   width: 60rem;
   height: 40rem;
+}
+
+.input-error {
+  border: 2px solid red;
 }
