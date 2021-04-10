@@ -1,3 +1,5 @@
+// const fs = require('fs');
+
 let next = 'open';
 
 document.querySelector('.show-form__button').addEventListener('click', () => {
@@ -40,8 +42,21 @@ document.querySelector('.show-form__button').addEventListener('click', () => {
 ymaps.ready(init);
 
 function init(){
-    var myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 7
-    });
+  var myMap = new ymaps.Map("map", {
+    center: [55.76, 37.64],
+    zoom: 7
+  });
 }
+
+document.querySelector('form').addEventListener('submit', (event) => {
+  const regExp = /[A-Za-z0-9.!$&*-=^`|~#%'+\/?_{}]+@[A-Za-z0-9-]+\.[A-Za-z]+/g;
+  const emailInput = document.querySelector('input[name=email]');
+  const email = emailInput.value;
+
+  if(!email.match(regExp)) {
+    event.preventDefault();
+    emailInput.classList.add('input-error');
+  } else {
+    emailInput.classList.remove('input-error')
+  }
+})
